@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <style>
+        body {
+        background-color:rgb(236, 248, 230);
+        text-align: center;
+        padding: 30px;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-top: 200px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        input[type="button"] {
+        background-color: rgb(185, 123, 123);
+        color: white;
+        border: none;
+        padding: 4px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 15px;
+        }
+
+        input[type="text"] {
+        background-color: rgb(236, 202, 202);
+        color: rgb(0, 0, 0);
+        border-color: black;
+        padding: 4px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 15px;
+        }
+    </style>
+    <title>Seatwork 1</title>
+</head>
+<body>
+     <div style="background-color: rgb(243, 217, 217, 0.4); padding: 30px 20px; border-radius: 15px; border-color: #b99494; border-style: solid; color: rgb(33, 0, 6); display: inline-block; box-shadow: -1px 1px 17px 1px #daece7; font-size: 15px;">
+        <h1>Monarch Club Member Checker</h1>
+        <h4>please use this to verify if you have passed monarch auditions</h4>
+        <form>
+            <input type="text" id="first_name" placeholder="enter your first name"><br><br>
+            <input type="text" id="last_name" placeholder="enter your last name"><br><br>
+            <input type="button" py-click="button" value="search">
+        </form><br>
+    <div id="result" style="background-color: #ffff"></div>
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
